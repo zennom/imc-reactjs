@@ -3,6 +3,8 @@ import styles from './App.module.css'
 import feitoCom from './assets/feitocom.png'
 import { GridItem } from './components/GridItem'
 import { levels, calculateImc, Level } from './helpers/imc'
+//IMPORTANDO A IMAGEM
+import leftArrowImage from './assets/leftarrow.png'
 
 const App = () =>{
 
@@ -56,7 +58,9 @@ const App = () =>{
           {
           toShow &&
            <div className={styles.rightSideBig}>
-            <div className={styles.rightArrow}></div>
+            <div className={styles.rightArrow}>
+              <img src={leftArrowImage} alt="" width={25} />
+            </div>
             
             <GridItem item={toShow} />
             </div>

@@ -71,9 +71,21 @@ body{
 }
 
 .container .rightSide .rightSideBig{
-    flex:1; /*flex:1 para ele
-    pegar todo espaço disponivel */
-    display:flex;/*vamos usar o display flex
-    para deixar ao lado do rightarrow */
+    flex:1;
+    display:flex;
+}
+
+.container .rightSide .rightArrow{
+    position: absolute;
+    background-color: #227C9D;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -35px;
+    margin-top: 140px;
 }
 
